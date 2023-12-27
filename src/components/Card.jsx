@@ -4,7 +4,7 @@ import UpdateTodoForm from './UpdateToDoForm'
 import SingleTodoList from './SingleTodoList'
 import { useSelector } from 'react-redux'
 import {useDispatch } from "react-redux";
-import {todoCleared,toggleInputForm} from "../store/features/todo/todoSlice"
+import {todoCleared} from "../store/features/todo/todoSlice"
 
 const Card = () => {
     const myTodos=useSelector((state)=>state.todos.todos)

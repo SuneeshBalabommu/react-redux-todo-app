@@ -1,4 +1,4 @@
-import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { createSlice} from "@reduxjs/toolkit";
 
 const initialState = { 
     todos:[],
@@ -21,7 +21,7 @@ export const todoSlice= createSlice({
         },
         toggleInputForm: (state,action)=>{
             state.toggleForm = !state.toggleForm
-            state.todoUpdate= {...state.todoUpdate, ... action.payload}
+            state.todoUpdate= {...state.todoUpdate, ...action.payload}
         },
         todoUpdated: (state,action)=>{
              const todoToUpdate= state.todos.find((todo)=> todo.id === action.payload.id)
